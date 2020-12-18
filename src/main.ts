@@ -5,10 +5,10 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const options = new DocumentBuilder()
-    .setTitle('Cats example')
-    .setDescription('The cats API Description')
+    .setTitle('DB Lab example')
+    .setDescription('The NestJs Project Description')
     .setVersion('1.0')
-    .addTag('cats')
+    // .addTag('cats')
     .build();
 
   const document = SwaggerModule.createDocument(app, options);
